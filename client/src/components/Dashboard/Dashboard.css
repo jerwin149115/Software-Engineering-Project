@@ -1,0 +1,11 @@
+.home,
+.reports,
+.products {
+  display: flex;
+  height: 82vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  max-width: 25rem;
+  width: 100%;
+}

@@ -1,0 +1,141 @@
+.analytics-container {
+  background-color: #101010;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 10px auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.analytics-container h3 {
+  color: #FFD700; 
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.filter-pagination-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.filter-box, .pagination-controls {
+  width: 45%;
+}
+
+
+.filter-select, .pagination-select {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #FFD700; 
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  appearance: none;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+  padding: 10px 10px;
+  background-color: #FFD700;
+  color: #141414;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #141414;
+  color: #FFD700;
+}
+
+.chart-box {
+  padding: 20px;
+  background-color: #101010;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.chart-box:hover {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.recharts-tooltip-wrapper, .recharts-legend-item {
+  color: #FFD700; 
+}
+
+.chart-box .chart-title {
+  font-size: 20px;
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.pagination-controls button {
+  background-color: #FFD700;
+  color: #141414;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.pagination-controls button:disabled {
+  background-color: #141414;
+  color: #FFD700;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  color: #FFD700;
+  font-size: 16px;
+  align-self: center;
+}
+
+
+@media (max-width: 768px) {
+  .filter-pagination-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-box, .pagination-controls {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .analytics-container {
+    padding: 20px;
+  }
+
+  .analytics-container h3 {
+    font-size: 20px;
+  }
+
+  .filter-select, .pagination-select {
+    font-size: 14px;
+  }
+}
