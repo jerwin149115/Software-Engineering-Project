@@ -37,7 +37,7 @@ export const addProduct = async (product) => {
 export const updateProduct = async (id, product) => {
     const response = await fetch(`${API_URL}/updateProduct/${id}`, {
         method: 'PUT',
-        body: JSON.stringify(product),
+        body: product,
     });
 
     if (!response.ok) {
