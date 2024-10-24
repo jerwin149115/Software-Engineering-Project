@@ -20,7 +20,7 @@ const login = async (req, res) => {
     if (!user || !(await user.comparePassword(password))) {
       return res.status(400).json({ error: 'Invalid credentials' });
     }
-    const token = jwt.sign({ id: user._id }, 'your_jwt_secret', { expiresIn: '24h' });
+    const token = jwt.sign({ id: user._id }, 'wow',);
     res.json({ token });
   } catch (error) {
     res.status(500).json({ error: error.message });

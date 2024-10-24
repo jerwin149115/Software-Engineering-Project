@@ -55,3 +55,43 @@
   background-color: #101010;
   color: #FFD700;
 }
+
+.pagination-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.page-item {
+  display: inline;
+}
+
+.page-link {
+  padding: 10px 15px;
+  border: 1px solid #101010;
+  border-radius: 5px;
+  background-color: #FFD700;
+  color: #101010;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #101010;
+  color: #FFD700;
+}
+
+.page-item.active .page-link {
+  background-color: #101010;
+  color: #FFD700;
+  cursor: default;
+  border-color: #101010;
+}

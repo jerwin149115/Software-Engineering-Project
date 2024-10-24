@@ -77,7 +77,7 @@ function Home({ setIsAuthenticated }) {
                         records.map((product) => (
                             <div key={product._id} className="product-card">   
                                 <div className="product-details">
-                                    <img src={`http://10.0.10.125:5000/${product.image}`} alt={product.name} />
+                                    <img src={`http://192.168.103.183:5000/${product.image}`} alt={product.name} />
                                     <h3>{product.name}</h3>
                                     <p className="price">${product.price}</p>
                                     <button 

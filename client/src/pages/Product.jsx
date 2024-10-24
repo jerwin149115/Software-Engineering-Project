@@ -11,7 +11,7 @@ function Product() {
     {
       name: 'Product Image',
       selector: row => {
-        const imageUrl = `http://10.0.10.125:5000/${row.image}`;
+        const imageUrl = `http://192.168.103.183:5000/${row.image}`;
         return (
           row.image
             ? <img src={imageUrl} alt="Product" style={{ width: '100px', height: '100px', objectFit: 'cover' }} />

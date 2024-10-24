@@ -69,7 +69,7 @@ function ProductProfile() {
   return (
     <div className='parent-container'>
         <div className='product-profile-container'>
-            <img src={`http://10.0.10.125:5000/${product.image}`} alt={`${product.image}`} className='image-product'/>
+            <img src={`http://192.168.103.183:5000/${product.image}`} alt={`${product.image}`} className='image-product'/>
             <h2>{product.name}</h2>
             <div className='product-form'>
                     <div className='product-form-group'>

@@ -1,4 +1,4 @@
-const API_URL = 'http://10.0.10.125:5000/api/users'; 
+const API_URL = 'http://192.168.103.183:5000/api/users'; 
 
 export const register = async (userData) => {
   try {
